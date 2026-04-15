@@ -28,10 +28,9 @@ def cargar(archivo):
         return pickle.load(f)
 
 
-
 guardar("autos.txt", autos)
 
 autos_cargados = cargar("autos.txt")
 
-# Mostrar datos (programación funcional)
+
 list(map(lambda auto: print(representar_auto(auto)), autos_cargados))
